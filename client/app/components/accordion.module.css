@@ -1,0 +1,40 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.accordionTitle {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 3px solid transparent;
+  border-color: #c0c0c0;
+  margin: 0 0 !important;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.accordionContent {
+  overflow: hidden;
+  max-height: 0;
+  transition:
+    max-height 0.3s ease-out,
+    opacity 0.3s ease-out;
+  opacity: 0;
+  background-color: #fff;
+}
+
+.accordionContent.open {
+  max-height: 200px;
+  opacity: 1;
+}

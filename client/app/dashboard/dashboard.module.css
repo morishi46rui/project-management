@@ -23,38 +23,6 @@
   gap: 20px;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.accordionTitle {
-  cursor: pointer;
-  font-weight: bold;
-  display: flex; /* アイコンとテキストをフレックスで揃える */
-  align-items: center; /* 垂直中央揃え */
-  gap: 8px; /* アイコンとテキストの間隔を調整 */
-  padding: 8px;
-  border-bottom: 3px solid transparent;
-  border-color: #c0c0c0;
-}
-
-
-.accordionContent {
-  overflow: hidden;
-  max-height: 0;
-  transition:
-    max-height 0.3s ease-out,
-    opacity 0.3s ease-out;
-  opacity: 0;
-}
-
-.accordionContent.open {
-  max-height: 200px;
-  opacity: 1;
-}
-
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
