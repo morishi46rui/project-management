@@ -58,11 +58,11 @@ export default function Template({ children }: { children: ReactNode }) {
           <Link href={pagesPath.$url()} className={styles.nav}>
             Home
           </Link>
-          <Link href={pagesPath.article.$url()} className={styles.nav}>
-            Article
-          </Link>
           <Link href={pagesPath.dashboard.$url()} className={styles.nav}>
             Dashboard
+          </Link>
+          <Link href={pagesPath.tasks.$url()} className={styles.nav}>
+            Tasks
           </Link>
         </div>
         <form
