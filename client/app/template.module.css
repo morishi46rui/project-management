@@ -7,6 +7,8 @@
   width: 100%;
   height: 60px;
   padding: 0 20px;
+  background-color: #4169e1;
+  color: #fff;
 }
 
 .userIcon {
@@ -27,7 +29,7 @@
 }
 
 .nav:hover {
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #fff;
 }
 
 .nav svg {

@@ -29,9 +29,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <div className={styles.container}>
-            {children}
-          </div>
+          <div className={styles.container}>{children}</div>
         </ThemeProvider>
       </body>
     </html>
