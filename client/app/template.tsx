@@ -1,5 +1,6 @@
 'use client';
 
+import HomeIcon from '@mui/icons-material/Home';
 import type { UserInfo } from 'common/types';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -56,7 +57,7 @@ export default function Template({ children }: { children: ReactNode }) {
       <div className={styles.userBanner}>
         <div>
           <Link href={pagesPath.$url()} className={styles.nav}>
-            Home
+            <HomeIcon />
           </Link>
           <Link href={pagesPath.dashboard.$url()} className={styles.nav}>
             Dashboard
