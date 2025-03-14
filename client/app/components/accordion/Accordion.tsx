@@ -1,15 +1,9 @@
 'use client';
 
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { type ReactNode, useState } from 'react';
+import { useState } from 'react';
 import styles from './accordion.module.css';
-
-type AccordionProps = {
-  title: string;
-  children: ReactNode;
-  defaultOpen?: boolean;
-};
+import type { AccordionProps } from './types';
 
 export default function Accordion({ title, children, defaultOpen = true }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
@@ -25,12 +19,8 @@ export default function Accordion({ title, children, defaultOpen = true }: Accor
           }
         }}
       >
-        <span className={styles.icon}>
-          {isOpen ? (
-            <ExpandLessIcon style={{ fontSize: '1.5em' }} />
-          ) : (
-            <ExpandMoreIcon style={{ fontSize: '1.5em' }} />
-          )}
+        <span className={`${styles.icon} ${isOpen ? styles.open : ''}`}>
+          <ExpandMoreIcon style={{ fontSize: '1.5em' }} />
         </span>
         {title}
       </h2>

@@ -1,6 +1,6 @@
 'use client';
 
-import Accordion from '../components/Accordion';
+import Accordion from '../components/accordion/Accordion';
 import styles from './dashboard.module.css';
 
 export default function Dashboard() {
@@ -11,6 +11,10 @@ export default function Dashboard() {
           <ul>
             <li>プロジェクト 1</li>
             <li>プロジェクト 2</li>
+            <li>プロジェクト 3</li>
+            <li>プロジェクト 4</li>
+            <li>プロジェクト 5</li>
+            <li>プロジェクト 6</li>
           </ul>
         </Accordion>
 

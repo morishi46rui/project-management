@@ -22,19 +22,24 @@
   justify-content: center;
   width: 24px;
   height: 24px;
+  transition: transform 0.3s ease-out;
 }
 
 .accordionContent {
   overflow: hidden;
   max-height: 0;
+  transform: translateY(0%);
   transition:
-    max-height 0.3s ease-out,
-    opacity 0.3s ease-out;
-  opacity: 0;
+    max-height 0.5s ease-out,
+    transform 0.5s ease-out;
   background-color: #fff;
 }
 
 .accordionContent.open {
   max-height: 200px;
-  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon.open {
+  transform: rotate(180deg);
 }
