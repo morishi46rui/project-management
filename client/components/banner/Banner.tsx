@@ -25,10 +25,10 @@ export default function Banner() {
         </Link>
       </div>
       <div>
-        <Link href={pagesPath.tasks.$url()} className={styles.nav}>
+        <Link href={pagesPath.user.$url()} className={styles.nav}>
           <UserIcon />
         </Link>
-        <Link href={pagesPath.tasks.$url()} className={styles.nav}>
+        <Link href={pagesPath.settings.$url()} className={styles.nav}>
           <SettingIcon />
         </Link>
       </div>
