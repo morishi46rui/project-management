@@ -1,6 +1,6 @@
 'use client';
 
-import Accordion from '../components/accordion/Accordion';
+import Accordion from '../../components/accordion/Accordion';
 import styles from './dashboard.module.css';
 
 export default function Dashboard() {

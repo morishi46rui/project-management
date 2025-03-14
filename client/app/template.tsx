@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react';
 import { Suspense } from 'react';
-import Banner from './components/banner/Banner';
+import Banner from '../components/banner/Banner';
 import styles from './template.module.css';
 
 export default function Template({ children }: { children: ReactNode }) {
