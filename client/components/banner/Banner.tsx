@@ -1,6 +1,7 @@
 'use client';
 
 import HomeIcon from '@mui/icons-material/Home';
+import LogoutIcon from '@mui/icons-material/Logout';
 import UserIcon from '@mui/icons-material/Person';
 import SettingIcon from '@mui/icons-material/Settings';
 import Link from 'next/link';
@@ -30,6 +31,9 @@ export default function Banner() {
         </Link>
         <Link href={pagesPath.settings.$url()} className={styles.nav}>
           <SettingIcon />
+        </Link>
+        <Link href={'/'} className={styles.nav}>
+          <LogoutIcon />
         </Link>
       </div>
     </div>
