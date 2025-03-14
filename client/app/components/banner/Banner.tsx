@@ -1,6 +1,8 @@
 'use client';
 
 import HomeIcon from '@mui/icons-material/Home';
+import UserIcon from '@mui/icons-material/Person';
+import SettingIcon from '@mui/icons-material/Settings';
 import Link from 'next/link';
 import { pagesPath } from 'utils/$path';
 import styles from './banner.module.css';
@@ -20,6 +22,14 @@ export default function Banner() {
         </Link>
         <Link href={pagesPath.tasks.$url()} className={styles.nav}>
           タスク
+        </Link>
+      </div>
+      <div>
+        <Link href={pagesPath.tasks.$url()} className={styles.nav}>
+          <UserIcon />
+        </Link>
+        <Link href={pagesPath.tasks.$url()} className={styles.nav}>
+          <SettingIcon />
         </Link>
       </div>
     </div>
